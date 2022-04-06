@@ -34,12 +34,12 @@ import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.LoaderClassPath;
-import ognl.ObjectPropertyAccessor;
-import ognl.OgnlContext;
-import ognl.OgnlException;
-import ognl.OgnlRuntime;
-import ognl.enhance.ContextClassLoader;
-import ognl.enhance.EnhancedClassLoader;
+import org.ognl.ObjectPropertyAccessor;
+import org.ognl.OgnlContext;
+import org.ognl.OgnlException;
+import org.ognl.OgnlRuntime;
+import org.ognl.enhance.ContextClassLoader;
+import org.ognl.enhance.EnhancedClassLoader;
 import org.ognl.test.util.NameFactory;
 
 import java.lang.reflect.Method;
@@ -55,7 +55,7 @@ import java.util.Map;
 public class CompilingPropertyAccessor extends ObjectPropertyAccessor
 {
 
-    private static NameFactory NAME_FACTORY = new NameFactory("ognl.PropertyAccessor", "v");
+    private static NameFactory NAME_FACTORY = new NameFactory("org.ognl.PropertyAccessor", "v");
     private static Getter NotFoundGetter = new Getter()
     {
 

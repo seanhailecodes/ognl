@@ -16,8 +16,8 @@
 package org.ognl.test;
 
 import junit.framework.TestCase;
-import ognl.Ognl;
-import ognl.OgnlException;
+import org.ognl.Ognl;
+import org.ognl.OgnlException;
 import org.ognl.test.objects.Simple;
 
 import java.util.HashMap;

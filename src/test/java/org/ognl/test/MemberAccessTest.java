@@ -31,10 +31,10 @@
 package org.ognl.test;
 
 import junit.framework.TestSuite;
-import ognl.DefaultMemberAccess;
-import ognl.Ognl;
-import ognl.OgnlContext;
-import ognl.OgnlException;
+import org.ognl.DefaultMemberAccess;
+import org.ognl.Ognl;
+import org.ognl.OgnlContext;
+import org.ognl.OgnlException;
 import org.ognl.test.objects.Simple;
 
 import java.lang.reflect.Member;
@@ -66,7 +66,7 @@ public class MemberAccessTest extends OgnlTestCase {
             result.addTest(new MemberAccessTest((String) TESTS[i][0] + " (" + TESTS[i][1] + ")", ROOT,
                                                 (String) TESTS[i][0], TESTS[i][1]));
         }
-        
+
         return result;
     }
 
@@ -107,7 +107,7 @@ public class MemberAccessTest extends OgnlTestCase {
     public void setUp()
     {
         super.setUp();
-        
+
         /* Should allow access at all to the Simple class except for the bigIntValue property */
         DefaultMemberAccess ma = new DefaultMemberAccess(false) {
 

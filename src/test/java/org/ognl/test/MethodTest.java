@@ -36,8 +36,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import ognl.Ognl;
-import ognl.OgnlException;
+import org.ognl.Ognl;
+import org.ognl.OgnlException;
 import org.ognl.test.objects.*;
 
 public class MethodTest extends OgnlTestCase

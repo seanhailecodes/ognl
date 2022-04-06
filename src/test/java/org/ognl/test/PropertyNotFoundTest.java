@@ -31,10 +31,10 @@
 package org.ognl.test;
 
 import junit.framework.TestSuite;
-import ognl.OgnlContext;
-import ognl.OgnlException;
-import ognl.OgnlRuntime;
-import ognl.PropertyAccessor;
+import org.ognl.OgnlContext;
+import org.ognl.OgnlException;
+import org.ognl.OgnlRuntime;
+import org.ognl.PropertyAccessor;
 
 import java.util.Map;
 
